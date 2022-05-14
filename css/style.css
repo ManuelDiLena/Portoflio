@@ -1,0 +1,23 @@
+/* Variables */
+:root {
+    --first-color: #3a3a3a;
+    --second-color: #d3d3d3;
+    --third-color: #8d8d8d;
+    --fourth-color: #ff9900;
+}
+
+/* General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--first-color);
+}

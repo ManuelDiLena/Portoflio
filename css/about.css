@@ -1,0 +1,216 @@
+/* About Section */
+#about {
+    height: 100vh;
+    padding: 50px 100px;
+    position: relative;
+}
+
+.about-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.about-title h2 {
+    font-size: 30px;
+    color: var(--second-color);
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.about-wrapper .contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.about-wrapper .contents .description {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.about-wrapper .contents .description p {
+    font-size: 20px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: var(--third-color);
+}
+
+.about-wrapper .contents .profile-picture {
+    display: flex;
+}
+
+.about-wrapper .contents .profile-picture img {
+    display: flex;
+    width: 215px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow:  15px 15px 30px #131313,
+             -4px -4px 20px #525252;
+    transition: all 0.5s;
+}
+
+.about-wrapper .contents .profile-picture img:hover {
+    box-shadow: 30px 30px 60px #131313,
+             -8px -8px 30px #525252;
+}
+
+.about-wrapper .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #252525;
+    width: 80%;
+    margin-top: 50px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    box-shadow:  15px 15px 20px #000000,
+             -12px -12px 20px #525252;
+}
+
+.about-wrapper .skills h3 {
+    font-size: 20px;
+    color: var(--third-color);
+}
+
+.about-wrapper .skills .skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+.about-wrapper .skills .skills-list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about-wrapper .skills .skills-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--first-color);
+    padding: 10px 0;
+    background: var(--third-color);
+    box-shadow:  6px 6px 20px #000000,
+             -6px -6px 20px #525252;
+    transition: all 0.5s;
+}
+
+.about-wrapper .skills .skills-list ul li:hover {
+    color: var(--fourth-color);
+    background: #414141;
+}
+
+
+@media screen and (max-width: 650px) {
+    #about {
+        padding: 10px 5px;
+        height: 100vh;
+    }
+
+    .about-title h2 {
+        font-size: 30px;
+        padding: 0 20px;
+    }
+
+    .about-wrapper .contents {
+        flex-direction: column;
+        padding-top: 10px;
+        width: 100%;
+    }
+
+    .about-wrapper .contents .description {
+        display: flex;
+        width: 100%;
+    }
+    
+    .about-wrapper .contents .description p {
+        font-size: 16px;
+    }
+
+    .about-wrapper .contents .profile-picture {
+        display: flex;
+        padding-top: 10px;
+    }
+    
+    .about-wrapper .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 50px;
+        padding: 10px 5px;
+    }
+
+    .about-wrapper .skills h3 {
+        font-size: 16px;
+    }
+    
+    .about-wrapper .skills .skill-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 1024px) {
+    #about {
+        height: 100vh;
+        padding: none;
+        margin: none;
+    }
+
+    .about-title {
+        height: 20%;
+        width: 100%;
+    }
+
+    .about-title h2 {
+        font-size: 50px;
+    }
+
+    .about-wrapper {
+        height: 80%;
+        width: 100%;
+    }
+
+    .about-wrapper .contents {
+        flex-direction: column;
+        height: 60%;
+        width: 100%;
+    }
+
+    .about-wrapper .contents .description {
+        width: 100%;
+    }
+    
+    .about-wrapper .contents .description p {
+        font-size: 25px;
+    }
+
+    .about-wrapper .skills {
+        width: 100%;
+    }
+}
